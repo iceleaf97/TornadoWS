@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orbit controls</title>
+    <style>
+        body{
+            font-size: 30px;
+        }
+        #scene{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        #data{
+            position: absolute;
+            left: 50px;
+            bottom: 0px;
+            color:floralwhite;
+
+        }
+        #startButton{
+            background-color:darkslategray;
+            border: none;
+            color: white;
+            padding: 30px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 50px;
+            
+            cursor: pointer;
+            width: 300px;
+            height: 200px;
+
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="scene"></div>
+    <div>
+        <button id="startButton">Click the button!</button>
+        <p>Using device orientation might require a user interaction.</p>
+    </div>
+    <div id="data">    
+        <p id="x">x:</p>
+        <p id="y">y:</p>
+        <p id="camAlpha">camAlpha:</p>
+        <p id="beta">beta:</p>
+        <p id="gamma">gamma:</p>
+    </div>
+    <script type="text/javascript" src="{{static_url("three.min.js")}}"></script> <!-- Load three.js library -->
+    <script type="text/javascript" src="{{static_url("DeviceOrientationControls.js")}}"></script> <!-- Load 3D scene -->
+    <script type="text/javascript" src="{{static_url("orient.js")}}"></script> <!-- Load 3D scene -->
+
+
+</body>
+</html>
